@@ -1,57 +1,64 @@
-#app {
+#proj {
     display: grid;
-    grid-template-columns: 34.37% 65.63%;
-    
-    height: 100vh;
+    grid-template-columns: 30% 70%;
+    background-color: var(--shape-background);
     gap: 1.25rem;
     overflow: hidden;
+    height: 100vh;
 }
 
 aside {
-    background-image: url(../assets/Background.jpg), linear-gradient(180deg, rgba(33, 37, 38, 0.8) 0%, rgba(33, 37, 38, 0.65) 20%, rgba(33, 37, 38, 0.3) 40.5%, rgba(33, 37, 38, 0.1) 100%);
-    background-repeat: no-repeat;
-
-    margin-block: 1.25rem;
     margin-left: auto;
-    border-radius: 0.75rem;
-    
-    & .aside-container {
+    background-image: url(../assets/Background.jpg), linear-gradient(180deg, rgba(33, 37, 38, 0.8) 0%, rgba(33, 37, 38, 0.65) 20%, rgba(33, 37, 38, 0.3) 40.5%, rgba(33, 37, 38, 0.1) 100%);;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .75rem;
+    margin-block: 1.25rem;
+    width: 25rem;
+    height: 41.5rem;
 
-        width: 25rem;
-        height: 41.5rem;
+header {
+    margin: 2rem;
 
-        padding: 2rem;
-    }
-    
-    h1 {
-        color: var(--accent-pink);
-        font: var(--text-logo);
-        padding-top: 1rem;
-    }
-
-    p {
-        font: var(--text-body-md);
+    & .title-header {
         font-weight: 200;
-        padding-top: .25rem;
     }
 
-    img {
-        width: 45.85px;
-        height: 48px;
+img {
+    height: 3rem;
+    margin-bottom: 1rem;
+}
 
-    }
+h1 {
+    font: 400 2.5rem var(--font-family-logo);
+    color: var(--accent-pink);
+    margin-bottom: .25rem;
+}
+
+span {
+    color: var(--text-heading);
+    font: var(--text-body-md);
+}
+
+}
+
 }
 
 main {
+    height: 42rem;
     overflow: auto;
-    max-width: 51.25rem;
-
+    scrollbar-width: none;
+    background-color: var(--shape-body);
     margin-block: 1.25rem;
-    
-    & .main-container {
-        background-color: var(--shape-body);
-        padding: 5rem 8.125rem;
-        border-radius: 0.75rem;        
-        margin-right: auto;
-    }
+    border-radius: .75rem;
+    width: 95%;
+
+
+
+h1 {
+    color: var(--text-heading);
+    font: var(--text-head-md);
+    margin-inline: 8.125rem;
+    padding-block: 5rem 2.5rem;
+}
 }
