@@ -9,6 +9,96 @@
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
-    
+    <div id="app">
+        <aside>
+            <div class="aside-container">
+                <header>
+                    <img src="./assets/logo.svg" alt="logo">
+                    <h1>Festivite</h1>
+
+                    <p>Crie um convite digital para o seu evento</p>
+                </header>
+            </div>
+        </aside>
+        
+        <main>
+            <div class="main-container">
+                <h2>Crie seu evento</h2>
+            
+                <form method="post" enctype="multipart/form-data">
+
+                    <fieldset class="child-about">
+                       <header>
+                        <img src="./assets/icons/calendar.svg" alt="calendar icon">
+                        <legend>Sobre o evento</legend>
+                        </header>
+                       
+                        <div class="input-wrapper date">
+                            <label for="eventname">Título</label>
+                            <input id="eventname" name="eventname" type="text" placeholder="Nome do evento">
+
+                        <div class="error">
+                            <img src="./assets/icons/circle-alert.svg" alt="alert">
+                             <span>Error message</span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-wrapper date">
+                            <label for="begindate">Início</label>
+                            <input id="begindate" name="begindate" type="datetime-local" placeholder="DD/MM/AAAA, --:--">
+                        </div>
+                        
+                        <div class="input-wrapper">
+                            <label for="endate">Fim</label>
+                            <input id="endate" name="endate" type="datetime-local" placeholder="DD/MM/AAAA, --:--">
+                        </div>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label>Tipo</label>
+                        <div class="radio">
+                            <div class="radio-select">
+                                <img src="./assets/icons/building-2.svg" alt="Ícone Presencial">
+                                <input type="radio" value="onsite" name="local" id="onsite">
+                                <label for="onsite">Presencial</label>
+                            </div>
+                    
+                            <div class="radio-select">
+                                <img src="./assets/icons/video.svg" alt="Ícone Online">
+                                <input type="radio" value="online" name="local" id="online">
+                                <label for="online">Online</label>
+                            </div>
+                        </div>
+                    </div>
+                        
+                        <div class="input-wrapper">
+                            <label for="local">Local</label>
+                            <input id="local" name="local" type="text" placeholder="Link ou endereço">
+                        </div>
+                        
+                        
+                        <!-- <div class="textarea-wrapper">
+                            <label for="description">Descrição</label>
+                            <textarea name="description" id="description"
+                            cols="30" rows="6"
+                            placeholder="Descreva sobre os detalhes do evento"
+                            ></textarea>
+                        </div> -->
+                    </fieldset>
+                </div>
+
+                </form>
+            
+
+
+
+            </div>
+        </main>
+    </div>
+
 </body>
 </html>
+
+
+
